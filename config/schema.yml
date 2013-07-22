@@ -23,8 +23,8 @@ propel:
     totalpersonas: { type: integer }
     colchonetas:   { type: integer }
     iglesia:       { type: integer }
-    zona:          { type: varchar(1), required: true}
     coordenadas:   { type: varchar(255) }
+    zona:          { type: boolean, required: true, default: 0 }
     asignado:      { type: boolean, required: true, default: 0 }
     alternos:      { type: boolean, required: true, default: 0 }
     observaciones: { type: varchar(255) }
