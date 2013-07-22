@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/46/trunk/apps/ibf/modules/ibf/templates
+END
+_menuPastor.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/43/trunk/apps/ibf/modules/ibf/templates/_menuPastor.php
+END
+_menuAdmin.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/42/trunk/apps/ibf/modules/ibf/templates/_menuAdmin.php
+END
+indexSuccess.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/42/trunk/apps/ibf/modules/ibf/templates/indexSuccess.php
+END
+_menuDiacono.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/43/trunk/apps/ibf/modules/ibf/templates/_menuDiacono.php
+END
+_Mail.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/17/trunk/apps/ibf/modules/ibf/templates/_Mail.php
+END
+_menuServicioSocial.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/31/trunk/apps/ibf/modules/ibf/templates/_menuServicioSocial.php
+END
+_MailAlumnoRegister.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/17/trunk/apps/ibf/modules/ibf/templates/_MailAlumnoRegister.php
+END
+ChangePasswordShowSuccess.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/17/trunk/apps/ibf/modules/ibf/templates/ChangePasswordShowSuccess.php
+END
+RecoverPasswordShowSuccess.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/17/trunk/apps/ibf/modules/ibf/templates/RecoverPasswordShowSuccess.php
+END
+_menu.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/43/trunk/apps/ibf/modules/ibf/templates/_menu.php
+END
+DownloadManualSuccess.pdf.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/17/trunk/apps/ibf/modules/ibf/templates/DownloadManualSuccess.pdf.php
+END
+_menuSecretaria.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/43/trunk/apps/ibf/modules/ibf/templates/_menuSecretaria.php
+END
+_MailProfesorRegister.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/17/trunk/apps/ibf/modules/ibf/templates/_MailProfesorRegister.php
+END
+_menuHospedaje.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/43/trunk/apps/ibf/modules/ibf/templates/_menuHospedaje.php
+END

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/18/trunk/plugins/sfGuardExtraPlugin/modules/sfGuardForgotPassword/lib
+END
+BasesfGuardForgotPasswordActions.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/!svn/ver/18/trunk/plugins/sfGuardExtraPlugin/modules/sfGuardForgotPassword/lib/BasesfGuardForgotPasswordActions.class.php
+END
+BasesfGuardForgotPasswordComponents.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/!svn/ver/18/trunk/plugins/sfGuardExtraPlugin/modules/sfGuardForgotPassword/lib/BasesfGuardForgotPasswordComponents.class.php
+END

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svn/!svn/ver/46/trunk/lib/filter
+END
+BaseFormFilterPropel.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/3/trunk/lib/filter/BaseFormFilterPropel.class.php
+END
+IglesiaFormFilter.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/3/trunk/lib/filter/IglesiaFormFilter.class.php
+END
+ProveedoresFormFilter.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/39/trunk/lib/filter/ProveedoresFormFilter.class.php
+END
+MinisterioFormFilter.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/3/trunk/lib/filter/MinisterioFormFilter.class.php
+END
+ProveedorFormFilter.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/42/trunk/lib/filter/ProveedorFormFilter.class.php
+END
+CasaFormFilter.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/3/trunk/lib/filter/CasaFormFilter.class.php
+END
+ProvedoresFormFilter.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/20/trunk/lib/filter/ProvedoresFormFilter.class.php
+END
+MiembroFormFilter.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/15/trunk/lib/filter/MiembroFormFilter.class.php
+END

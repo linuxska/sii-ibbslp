@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/46/trunk/apps/ibf/modules/casa/config
+END
+generator.yml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/42/trunk/apps/ibf/modules/casa/config/generator.yml
+END
+security.yml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/48/trunk/apps/ibf/modules/casa/config/security.yml
+END
+view.yml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/16/trunk/apps/ibf/modules/casa/config/view.yml
+END

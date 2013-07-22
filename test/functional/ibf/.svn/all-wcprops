@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/46/trunk/test/functional/ibf
+END
+provedoresActionsTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/20/trunk/test/functional/ibf/provedoresActionsTest.php
+END
+miembroActionsTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/6/trunk/test/functional/ibf/miembroActionsTest.php
+END
+iglesiaActionsTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/20/trunk/test/functional/ibf/iglesiaActionsTest.php
+END
+ibfActionsTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/17/trunk/test/functional/ibf/ibfActionsTest.php
+END
+ministerioActionsTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/3/trunk/test/functional/ibf/ministerioActionsTest.php
+END
+proveedorActionsTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/42/trunk/test/functional/ibf/proveedorActionsTest.php
+END
+casaActionsTest.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/3/trunk/test/functional/ibf/casaActionsTest.php
+END
