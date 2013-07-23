@@ -5,12 +5,12 @@ html, body{
 }
 div#header{
     text-align:center;
-    height:200px;
+    height:350px;
     background-color:#5377b1;
 }
 div#header img{
     width:1000px;
-    height:200px;
+    height:350px;
 }
 div#content{
     min-height:500px;

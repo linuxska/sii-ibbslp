@@ -3,6 +3,7 @@ propel:
     id:            ~
     name:          { type: varchar(255), required: true, index: unique }
 
+
   casa:
     id:            ~
     ministerio:    { type: integer, foreignTable: ministerio, foreignReference: id, required: true, onDelete: CASCADE }
@@ -23,29 +24,10 @@ propel:
     totalpersonas: { type: integer }
     colchonetas:   { type: integer }
     iglesia:       { type: integer }
-    zona:          { type: varchar(1), required: true}
     coordenadas:   { type: varchar(255) }
+    ruta:          { type: boolean, required: true, default: 0 }
     asignado:      { type: boolean, required: true, default: 0 }
     alternos:      { type: boolean, required: true, default: 0 }
-    observaciones: { type: varchar(255) }
-
-  miembro:
-    id:            ~
-    ministerio:    { type: integer, foreignTable: ministerio, foreignReference: id, required: true, onDelete: CASCADE }
-    nombre:        { type: varchar(255), required: true }
-    apaterno:      { type: varchar(255), required: true }
-    amaterno:      { type: varchar(255) }
-    sexo:          { type: varchar(10)  }
-    direccion:     { type: varchar(255), required: true }
-    entrecalles:   { type: varchar(255) }
-    colonia:       { type: varchar(255) }
-    cp:            { type: varchar(5)}
-    ciudad:        { type: varchar(255), required: true }
-    telcasa:       { type: varchar(10) }
-    telmovil:      { type: varchar(10) }
-    cumpleanios:   { type: date }
-    fechabautismo: { type: date }
-    correo:        { type: varchar(255) }
     observaciones: { type: varchar(255) }
 
   iglesia:

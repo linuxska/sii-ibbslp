@@ -13,8 +13,8 @@
                 <?php $action = true ?>
                 <?php $i = 0 ?>
                 <?php $widgets_total = count($configuration->getFormFilterFields($form)) ?>
-                <?php const WIDGET_PER_ROW = 3 ?>
-                <?php const MODEL = "iglesia" ?>
+                <?php define("WIDGET_PER_ROW", 3) ?>
+                <?php define("MODEL", "iglesia") ?>
 
                 <tr><td style="background-color:#E7EEF6;font-weight:bold;border:1px solid #DDD;" colspan="<?php echo WIDGET_PER_ROW + 1 ?>">Filtrar</td></tr>
                 <?php foreach ($configuration->getFormFilterFields($form) as $name => $field) : ?>

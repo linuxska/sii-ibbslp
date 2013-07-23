@@ -10,7 +10,7 @@
 class CasaForm extends BaseCasaForm
 {
   protected $ciudad = ARRAY(
-        'Hermosillo'=>'Hermosillo','Celaya' => 'Celaya', 'Salvatierra' => 'Salvatierra', 'Tarimoro' => 'Tarimoro', 'Apaseo el Alto' => 'Apaseo el Alto', 'Apaseo el grande' => 'Apaseo el Grande', 'Villagran' => 'Villagran', 'Comonfort' => 'Comonfort','Queretaro' => 'Queretaro','Cortazar' => 'Cortazar');    
+        'San Luis Postosi'=>'San Luis Potosi','Soledad de Graciano Sanchez' => 'Soledad de Graciano Sanchez');
   protected $zona = ARRAY(
         'A' => 'A', 'B' => 'B', 'C' => 'C', 'D' => 'D', 'E' => 'E', 'F' => 'F', 'G' => 'G','H' => 'H','I' => 'I','J' => 'J', 'K' => 'K', 'L' => 'L');      	
   protected $matrimonios = ARRAY(
@@ -58,7 +58,7 @@ class CasaForm extends BaseCasaForm
 
         $this->setValidator('telmovil', new sfValidatorRegex(array('max_length' => 12, 'pattern' => '/^[0-9]{5,}+$/', 'required' => false), array('max_length' => '"%value%" es muy grande (máximo %max_length% caracteres).', 'required' => 'Requerido.', 'invalid' => 'Inválido. ##########')));
         $this->setValidator('telcasa', new sfValidatorRegex(array('max_length' => 12, 'pattern' => '/^[0-9]{5,}+$/', 'required' => false), array('max_length' => '"%value%" es muy grande (máximo %max_length% caracteres).', 'required' => 'Requerido.', 'invalid' => 'Inválido. ##########')));
-        $this->setDefault('ciudad', 'Celaya');
+        $this->setDefault('San Luis Potosi', 'San Luis Postosi');
 	      $this->setDefault('ministerio','32');
 
         $this->widgetSchema->setHelps(array(
