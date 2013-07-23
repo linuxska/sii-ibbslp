@@ -25,7 +25,11 @@ propel:
     colchonetas:   { type: integer }
     iglesia:       { type: integer }
     coordenadas:   { type: varchar(255) }
+<<<<<<< HEAD
     ruta:          { type: boolean, required: true, default: 0 }
+=======
+    zona:          { type: boolean, required: true, default: 0 }
+>>>>>>> 6253ad17a5423de1ee98f143e838451a9eea81ef
     asignado:      { type: boolean, required: true, default: 0 }
     alternos:      { type: boolean, required: true, default: 0 }
     observaciones: { type: varchar(255) }
