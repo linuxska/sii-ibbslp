@@ -1,5 +1,0 @@
-RecoverPasswordShow:
-  is_secure: false
-  
-RecoverPassword:
-  is_secure: false

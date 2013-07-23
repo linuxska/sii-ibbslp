@@ -1,5 +1,0 @@
-all:
-  layout: layout
- 
-RecoverPasswordShowSuccess:
-  layout: default
