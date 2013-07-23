@@ -79,9 +79,9 @@ class iglesiaActions extends autoIglesiaActions
   // set document information
   $pdf->SetCreator(PDF_CREATOR);
   $pdf->SetAuthor('Abraham Rafael Rico Moreno');
-  $pdf->SetTitle('Iglesia Bautista Fundamental de Celaya');
+  $pdf->SetTitle('Iglesia Biblica Bautista de San Luis Potosi');
   $pdf->SetSubject('Bienvenidos');
-  $pdf->SetKeywords('IBF, ibfcelaya, hospedaje, casa, ab');
+  $pdf->SetKeywords('IBF, ibfsanluispotosi, hospedaje, casa, ab');
  
   // set default header data
   $pdf->SetHeaderData(PDF_HEADER_LOGO, PDF_HEADER_LOGO_WIDTH, PDF_HEADER_TITLE, PDF_HEADER_STRING);
@@ -124,7 +124,7 @@ class iglesiaActions extends autoIglesiaActions
 
   // Set some content to print
   $html = $html3."<br/>"."<br/>"." Información de la Iglesia: <i>".$nombreiglesia."</i><br/>".'<img style="-webkit-user-select: none; cursor: -webkit-zoom-out; "
-  align="middle" height="500" width="500" src="/Users/linuxska/sfproject/sii-ibf/web/uploads/fotos/'.$url.'"/>'."<br/>".
+  align="middle" height="500" width="500" src="/home4/abricola/public_html/ibfcelayaorg/ibbslp/Users/linuxska/sfproject/sii-ibf/web/uploads/fotos/'.$url.'"/>'."<br/>".
   "Nombre del pastor: ".$nombrepastor."<br/>"."Direccion: ".$domicilio."<br/>"."en: ".$localizacion."<br/>Telefono: ".
   $telefono."<br/>"."Celular: ".$movil."<br/>Correo electronico: ".$correo."<br/>"."Pagina: ".$pagina;
   // Print text using writeHTMLCell()
