@@ -35,7 +35,7 @@ generator:
         fields:  
           __nombre:      { label: Nombre completo }
           __Ministerio:  { label: Ministerio }
-        max_per_page: 2
+        max_per_page: 25
         actions:
           reporte:
             label: Reporte General

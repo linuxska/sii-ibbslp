@@ -41,8 +41,6 @@ generator:
              label: Borrar
           _edit:  
              label: Editar
-          Imprimir:
-            label: Imprimir
         actions:
           _new:
             label: Nuevo Miembro

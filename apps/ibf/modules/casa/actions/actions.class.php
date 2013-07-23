@@ -388,7 +388,7 @@ class casaActions extends autoCasaActions
     $form->bind($request->getParameter($form->getName()), $request->getFiles($form->getName()));
     if ($form->isValid())
     {
-      $notice = $form->getObject()->isNew() ? 'La casa fue creada correctamente ruth aguilar Feliz.' : 'La casa se ha actualizado.';
+      $notice = $form->getObject()->isNew() ? 'La casa fue creada correctamente.' : 'La casa se ha actualizado.';
 
       $Casa = $form->save();
 

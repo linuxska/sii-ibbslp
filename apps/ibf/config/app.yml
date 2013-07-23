@@ -13,7 +13,7 @@ all:
 
  sf_guard_extra_plugin:
         mail_from:        contacto@ibfcelaya.org.mx
-        name_from:        Pastor Alejandro Cordova Karan
+        name_from:        Pastor Luis Ramos Cisneros
         subject_confirm:  Confirmación de registro
         subject_complete: Petición completa
         subject_request:  Petición de reestablecimiento de contraseña

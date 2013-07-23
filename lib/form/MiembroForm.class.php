@@ -11,7 +11,7 @@ class MiembroForm extends BaseMiembroForm
 {
 
 	 protected $ciudad = ARRAY(
-        'Celaya' => 'Celaya', 'Salvatierra' => 'Salvatierra', 'Tarimoro' => 'Tarimoro', 'Apaseo el Alto' => 'Apaseo el Alto', 'Apaseo el grande' => 'Apaseo el Grande', 'Villagran' => 'Villagran', 'Comonfort' => 'Comonfort');    
+        'San Luis Potosi' => 'San Luis Potosi','Celaya' => 'Celaya', 'Salvatierra' => 'Salvatierra', 'Tarimoro' => 'Tarimoro', 'Apaseo el Alto' => 'Apaseo el Alto', 'Apaseo el grande' => 'Apaseo el Grande', 'Villagran' => 'Villagran', 'Comonfort' => 'Comonfort');    
  	 protected $sexo = ARRAY(
          'Masculino' => 'Masculino', 'Femenino' => 'Femenino');    
  
@@ -37,7 +37,7 @@ class MiembroForm extends BaseMiembroForm
 
         $this->setValidator('telmovil', new sfValidatorRegex(array('max_length' => 12, 'pattern' => '/^[0-9]{10}+$/', 'required' => false), array('max_length' => '"%value%" es muy grande (máximo %max_length% caracteres).', 'required' => 'Requerido.', 'invalid' => 'Inválido. ##########')));
         $this->setValidator('telcasa', new sfValidatorRegex(array('max_length' => 12, 'pattern' => '/^[0-9]{5,}+$/', 'required' => false), array('max_length' => '"%value%" es muy grande (máximo %max_length% caracteres).', 'required' => 'Requerido.', 'invalid' => 'Inválido. ##########')));
-        $this->setDefault('ciudad', 'Celaya');
+        $this->setDefault('ciudad', 'San Luis Potosi');
 	    $this->setDefault('ministerio','21');
 		
 	   

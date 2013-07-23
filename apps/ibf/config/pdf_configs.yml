@@ -21,13 +21,13 @@ default:
   # page orientation (P=portrait, L=landscape)
   PDF_PAGE_ORIENTATION: "L"
   # document creator
-  PDF_CREATOR: "Iglesia Bautista Fundamental de Celaya"
+  PDF_CREATOR: "Iglesia Biblica Bautista de San Luis Potosi"
   # document author
   PDF_AUTHOR: "Abraham Rafael Rico Moreno"
   # header title
-  PDF_HEADER_TITLE: "Iglesia Bautista Fundamental de Celaya"
+  PDF_HEADER_TITLE: "Iglesia Biblica Bautista de San Luis Potosi"
   # header description string
-  PDF_HEADER_STRING: "Pastor Alejandro Córdova Karán - contacto@ibfcelaya.org.mx\nwww.ibfcelaya.org.mx"
+  PDF_HEADER_STRING: "Pastor Luis Ramos Cisneros- ibbslp@yahoo.com.mx\nwww.ibbslp.org.mx/"
   # image logo
   PDF_HEADER_LOGO: "Logo.png"
   # header logo image width [mm]
