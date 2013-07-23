@@ -20,9 +20,7 @@ generator:
         fields:  
           name:  { label: Ministerio }
           id:  { label: Numero }
-        max_per_page: 10
-        batch_actions: {}
-        object_actions: {}
+        max_per_page: 30
         actions:
           _new:
             label: Nuevo Ministerio
