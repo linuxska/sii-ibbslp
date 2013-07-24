@@ -33,10 +33,9 @@ abstract class BaseCasaForm extends BaseFormPropel
       'totalpersonas' => new sfWidgetFormInputText(),
       'colchonetas'   => new sfWidgetFormInputText(),
       'iglesia'       => new sfWidgetFormInputText(),
-      'zona'          => new sfWidgetFormInputText(),
       'coordenadas'   => new sfWidgetFormInputText(),
-      'asignado'      => new sfWidgetFormInputCheckbox(),
-      'alternos'      => new sfWidgetFormInputCheckbox(),
+      'asignado'      => new sfWidgetFormInputText(),
+      'alternos'      => new sfWidgetFormInputText(),
       'observaciones' => new sfWidgetFormInputText(),
     ));
 
@@ -49,7 +48,7 @@ abstract class BaseCasaForm extends BaseFormPropel
       'direccion'     => new sfValidatorString(array('max_length' => 255)),
       'colonia'       => new sfValidatorString(array('max_length' => 255, 'required' => false)),
       'cp'            => new sfValidatorString(array('max_length' => 5, 'required' => false)),
-      'ruta'          => new sfValidatorString(array('max_length' => 10, 'required' => false)),
+      'ruta'          => new sfValidatorInteger(array('min' => -128, 'max' => 127)),
       'ciudad'        => new sfValidatorString(array('max_length' => 255)),
       'telcasa'       => new sfValidatorString(array('max_length' => 10, 'required' => false)),
       'telmovil'      => new sfValidatorString(array('max_length' => 10, 'required' => false)),
@@ -60,10 +59,9 @@ abstract class BaseCasaForm extends BaseFormPropel
       'totalpersonas' => new sfValidatorInteger(array('min' => -2147483648, 'max' => 2147483647, 'required' => false)),
       'colchonetas'   => new sfValidatorInteger(array('min' => -2147483648, 'max' => 2147483647, 'required' => false)),
       'iglesia'       => new sfValidatorInteger(array('min' => -2147483648, 'max' => 2147483647, 'required' => false)),
-      'zona'          => new sfValidatorString(array('max_length' => 1)),
       'coordenadas'   => new sfValidatorString(array('max_length' => 255, 'required' => false)),
-      'asignado'      => new sfValidatorBoolean(),
-      'alternos'      => new sfValidatorBoolean(),
+      'asignado'      => new sfValidatorInteger(array('min' => -128, 'max' => 127)),
+      'alternos'      => new sfValidatorInteger(array('min' => -128, 'max' => 127)),
       'observaciones' => new sfValidatorString(array('max_length' => 255, 'required' => false)),
     ));
 

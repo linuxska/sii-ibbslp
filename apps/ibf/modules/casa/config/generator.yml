@@ -31,7 +31,7 @@ generator:
         totalpersonas: { label: Total }
       list:    
         title: Lista de Casas donde Hospedar
-        display: [id, =__Ministerio, =__nombre, direccion,colonia, zona, telcasa, telmovil ,matrimonios, peques, jovenes, jovencitas, iglesia, totalpersonas , alternos,  asignado, observaciones]
+        display: [id, =__Ministerio, =__nombre, direccion,colonia, telcasa, telmovil ,matrimonios, peques, jovenes, jovencitas, iglesia, totalpersonas , alternos,  asignado, observaciones]
         fields:  
           __nombre:      { label: Nombre completo }
           __Ministerio:  { label: Ministerio }
