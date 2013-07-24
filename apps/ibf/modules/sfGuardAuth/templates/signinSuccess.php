@@ -1,7 +1,7 @@
 <?php use_stylesheet('sfGuardPlugin/signin.css')?>
 
 <div id="text">
-    <h2>Bienvenido Sistema Integral de Informacion de la Iglesia Bautista Fundamental de Celaya</h2>
+    <h2>Bienvenido Sistema Integral de Informacion de la <br/>Iglesia Biblica Bautista de San Luis Potosi</h2>
     <dl>
         <dt>Inicie sesión</dt>
         <dd>Ingrese al sistema proporcionando sus datos de acceso en el formulario

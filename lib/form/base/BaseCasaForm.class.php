@@ -22,7 +22,7 @@ abstract class BaseCasaForm extends BaseFormPropel
       'direccion'     => new sfWidgetFormInputText(),
       'colonia'       => new sfWidgetFormInputText(),
       'cp'            => new sfWidgetFormInputText(),
-      'ruta'          => new sfWidgetFormInputText(),
+      'ruta'          => new sfWidgetFormInputCheckbox(),
       'ciudad'        => new sfWidgetFormInputText(),
       'telcasa'       => new sfWidgetFormInputText(),
       'telmovil'      => new sfWidgetFormInputText(),
@@ -34,8 +34,8 @@ abstract class BaseCasaForm extends BaseFormPropel
       'colchonetas'   => new sfWidgetFormInputText(),
       'iglesia'       => new sfWidgetFormInputText(),
       'coordenadas'   => new sfWidgetFormInputText(),
-      'asignado'      => new sfWidgetFormInputText(),
-      'alternos'      => new sfWidgetFormInputText(),
+      'asignado'      => new sfWidgetFormInputCheckbox(),
+      'alternos'      => new sfWidgetFormInputCheckbox(),
       'observaciones' => new sfWidgetFormInputText(),
     ));
 

@@ -7,15 +7,7 @@
         <p>Hermano(a):</p>
         <p>Bienvenido</p>
         <ol>
-            <li>Recordar:  8 Usuarios de la Base de datos:
-                |may|abraham|blanquita|karen|joellupita|elsy|neftali|misael|
-                Password:    hospedajeibf
-                Registro de Hospedaje    
-                Joel Grps Grandres
-                Lupita familias de 2-3.
-                Misael familias de 4-6.
-                Karen  familias de 6++.
-                Mis responsabilidades ver por Jovenes/Hombres solos, Señoritas/Mujeres solas.
+            <li>Recordar:
             </li>
         </ol>
         <p style="text-align:right"><em>- Staff</em></p>

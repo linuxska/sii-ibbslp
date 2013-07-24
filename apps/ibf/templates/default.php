@@ -3,7 +3,7 @@
   <head>
     <?php include_http_metas() ?>
     <?php include_metas() ?>
-    <title><?php include_slot('title', 'IBF ')?></title>
+    <title><?php include_slot('title', 'IBBSLP')?></title>
     <link rel="shortcut icon" href="/web/favicon.ico" />
     <?php include_stylesheets() ?>
     <?php include_javascripts() ?>
