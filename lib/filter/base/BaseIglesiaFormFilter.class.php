@@ -27,7 +27,7 @@ abstract class BaseIglesiaFormFilter extends BaseFormFilterPropel
       'correo'         => new sfWidgetFormFilterInput(),
       'pagina'         => new sfWidgetFormFilterInput(),
       'nombrearchivo'  => new sfWidgetFormFilterInput(),
-      'foto'           => new sfWidgetFormFilterInput(),
+      'foto'           => new sfWidgetFormChoice(array('choices' => array('' => 'yes or no', 1 => 'yes', 0 => 'no'))),
       'observaciones'  => new sfWidgetFormFilterInput(),
     ));
 
@@ -47,7 +47,7 @@ abstract class BaseIglesiaFormFilter extends BaseFormFilterPropel
       'correo'         => new sfValidatorPass(array('required' => false)),
       'pagina'         => new sfValidatorPass(array('required' => false)),
       'nombrearchivo'  => new sfValidatorPass(array('required' => false)),
-      'foto'           => new sfValidatorSchemaFilter('text', new sfValidatorInteger(array('required' => false))),
+      'foto'           => new sfValidatorChoice(array('required' => false, 'choices' => array('', 1, 0))),
       'observaciones'  => new sfValidatorPass(array('required' => false)),
     ));
 
@@ -82,7 +82,7 @@ abstract class BaseIglesiaFormFilter extends BaseFormFilterPropel
       'correo'         => 'Text',
       'pagina'         => 'Text',
       'nombrearchivo'  => 'Text',
-      'foto'           => 'Number',
+      'foto'           => 'Boolean',
       'observaciones'  => 'Text',
     );
   }

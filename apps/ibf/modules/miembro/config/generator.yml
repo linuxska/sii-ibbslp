@@ -75,7 +75,7 @@ generator:
           _list:
             label: Volver
       new:
-        title: Capturar Nueva Casa
+        title: Capturar Nuevo miembro
         actions:
           _save:
             label: Guardar

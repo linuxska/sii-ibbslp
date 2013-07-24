@@ -19,7 +19,7 @@ abstract class BaseCasaFormFilter extends BaseFormFilterPropel
       'direccion'     => new sfWidgetFormFilterInput(array('with_empty' => false)),
       'colonia'       => new sfWidgetFormFilterInput(),
       'cp'            => new sfWidgetFormFilterInput(),
-      'ruta'          => new sfWidgetFormFilterInput(array('with_empty' => false)),
+      'ruta'          => new sfWidgetFormChoice(array('choices' => array('' => 'yes or no', 1 => 'yes', 0 => 'no'))),
       'ciudad'        => new sfWidgetFormFilterInput(array('with_empty' => false)),
       'telcasa'       => new sfWidgetFormFilterInput(),
       'telmovil'      => new sfWidgetFormFilterInput(),
@@ -31,8 +31,8 @@ abstract class BaseCasaFormFilter extends BaseFormFilterPropel
       'colchonetas'   => new sfWidgetFormFilterInput(),
       'iglesia'       => new sfWidgetFormFilterInput(),
       'coordenadas'   => new sfWidgetFormFilterInput(),
-      'asignado'      => new sfWidgetFormFilterInput(array('with_empty' => false)),
-      'alternos'      => new sfWidgetFormFilterInput(array('with_empty' => false)),
+      'asignado'      => new sfWidgetFormChoice(array('choices' => array('' => 'yes or no', 1 => 'yes', 0 => 'no'))),
+      'alternos'      => new sfWidgetFormChoice(array('choices' => array('' => 'yes or no', 1 => 'yes', 0 => 'no'))),
       'observaciones' => new sfWidgetFormFilterInput(),
     ));
 
@@ -44,7 +44,7 @@ abstract class BaseCasaFormFilter extends BaseFormFilterPropel
       'direccion'     => new sfValidatorPass(array('required' => false)),
       'colonia'       => new sfValidatorPass(array('required' => false)),
       'cp'            => new sfValidatorPass(array('required' => false)),
-      'ruta'          => new sfValidatorSchemaFilter('text', new sfValidatorInteger(array('required' => false))),
+      'ruta'          => new sfValidatorChoice(array('required' => false, 'choices' => array('', 1, 0))),
       'ciudad'        => new sfValidatorPass(array('required' => false)),
       'telcasa'       => new sfValidatorPass(array('required' => false)),
       'telmovil'      => new sfValidatorPass(array('required' => false)),
@@ -56,8 +56,8 @@ abstract class BaseCasaFormFilter extends BaseFormFilterPropel
       'colchonetas'   => new sfValidatorSchemaFilter('text', new sfValidatorInteger(array('required' => false))),
       'iglesia'       => new sfValidatorSchemaFilter('text', new sfValidatorInteger(array('required' => false))),
       'coordenadas'   => new sfValidatorPass(array('required' => false)),
-      'asignado'      => new sfValidatorSchemaFilter('text', new sfValidatorInteger(array('required' => false))),
-      'alternos'      => new sfValidatorSchemaFilter('text', new sfValidatorInteger(array('required' => false))),
+      'asignado'      => new sfValidatorChoice(array('required' => false, 'choices' => array('', 1, 0))),
+      'alternos'      => new sfValidatorChoice(array('required' => false, 'choices' => array('', 1, 0))),
       'observaciones' => new sfValidatorPass(array('required' => false)),
     ));
 
@@ -84,7 +84,7 @@ abstract class BaseCasaFormFilter extends BaseFormFilterPropel
       'direccion'     => 'Text',
       'colonia'       => 'Text',
       'cp'            => 'Text',
-      'ruta'          => 'Number',
+      'ruta'          => 'Boolean',
       'ciudad'        => 'Text',
       'telcasa'       => 'Text',
       'telmovil'      => 'Text',
@@ -96,8 +96,8 @@ abstract class BaseCasaFormFilter extends BaseFormFilterPropel
       'colchonetas'   => 'Number',
       'iglesia'       => 'Number',
       'coordenadas'   => 'Text',
-      'asignado'      => 'Number',
-      'alternos'      => 'Number',
+      'asignado'      => 'Boolean',
+      'alternos'      => 'Boolean',
       'observaciones' => 'Text',
     );
   }

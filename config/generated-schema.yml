@@ -1,0 +1,83 @@
+propel:
+  _attributes:
+    defaultIdMethod: native
+    package: lib.model
+  ministerio:
+    id: { type: integer, required: true, primaryKey: true, autoIncrement: true }
+    name: { type: varchar, required: true, size: '255' }
+    _uniques: { '': [name] }
+  casa:
+    id: { type: integer, required: true, primaryKey: true, autoIncrement: true }
+    ministerio: { type: integer, required: true, foreignTable: ministerio, foreignReference: id, onDelete: CASCADE, onUpdate: RESTRICT }
+    nombre: { type: varchar, required: true, size: '255' }
+    apaterno: { type: varchar, required: true, size: '255' }
+    amaterno: { type: varchar, size: '255' }
+    direccion: { type: varchar, required: true, size: '255' }
+    colonia: { type: varchar, size: '255' }
+    cp: { type: varchar, size: '5' }
+    ruta: { type: boolean, required: true, default: '0' }
+    ciudad: { type: varchar, required: true, size: '255' }
+    telcasa: { type: varchar, size: '10' }
+    telmovil: { type: varchar, size: '10' }
+    matrimonios: { type: integer }
+    peques: { type: integer }
+    jovenes: { type: integer }
+    jovencitas: { type: integer }
+    totalpersonas: { type: integer }
+    colchonetas: { type: integer }
+    iglesia: { type: integer }
+    coordenadas: { type: varchar, size: '255' }
+    asignado: { type: boolean, required: true, default: '0' }
+    alternos: { type: boolean, required: true, default: '0' }
+    observaciones: { type: varchar, size: '255' }
+  miembro:
+    id: { type: integer, required: true, primaryKey: true, autoIncrement: true }
+    ministerio: { type: integer, required: true, foreignTable: ministerio, foreignReference: id, onDelete: CASCADE }
+    nombre: { type: varchar, required: true, size: '255' }
+    apaterno: { type: varchar, required: true, size: '255' }
+    amaterno: { type: varchar, size: '255' }
+    sexo: { type: varchar, size: '10' }
+    direccion: { type: varchar, required: true, size: '255' }
+    entrecalles: { type: varchar, size: '255' }
+    colonia: { type: varchar, size: '255' }
+    cp: { type: varchar, size: '5' }
+    ciudad: { type: varchar, required: true, size: '255' }
+    telcasa: { type: varchar, size: '10' }
+    telmovil: { type: varchar, size: '10' }
+    cumpleanios: { type: date }
+    fechabautismo: { type: date }
+    correo: { type: varchar, size: '255' }
+    observaciones: { type: varchar, size: '255' }
+  iglesia:
+    id: { type: integer, required: true, primaryKey: true, autoIncrement: true }
+    nombre_iglesia: { type: varchar, required: true, size: '255' }
+    nombre_pastor: { type: varchar, required: true, size: '255' }
+    apaterno: { type: varchar, required: true, size: '255' }
+    amaterno: { type: varchar, size: '255' }
+    direccion: { type: varchar, required: true, size: '255' }
+    colonia: { type: varchar, size: '255' }
+    cp: { type: varchar, size: '5' }
+    ciudad: { type: varchar, required: true, size: '255' }
+    estado: { type: varchar, required: true, size: '255' }
+    pais: { type: varchar, required: true, size: '255' }
+    telefono: { type: varchar, size: '12' }
+    movil: { type: varchar, size: '12' }
+    correo: { type: varchar, size: '255' }
+    pagina: { type: varchar, size: '255' }
+    nombrearchivo: { type: varchar, size: '255' }
+    foto: { type: boolean, default: '0' }
+    observaciones: { type: varchar, size: '255' }
+  proveedor:
+    id: { type: integer, required: true, primaryKey: true, autoIncrement: true }
+    nombreempresa: { type: varchar, required: true, size: '255' }
+    giro: { type: varchar, size: '64' }
+    direccion: { type: varchar, required: true, size: '255' }
+    entrecalles: { type: varchar, size: '255' }
+    colonia: { type: varchar, size: '255' }
+    cp: { type: varchar, size: '5' }
+    ciudad: { type: varchar, required: true, size: '255' }
+    tellocal: { type: varchar, size: '10' }
+    telmovil: { type: varchar, size: '10' }
+    idnextel: { type: varchar, size: '15' }
+    correo: { type: varchar, size: '255' }
+    observaciones: { type: varchar, size: '255' }

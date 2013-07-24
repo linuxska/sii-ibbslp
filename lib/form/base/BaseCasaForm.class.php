@@ -48,7 +48,7 @@ abstract class BaseCasaForm extends BaseFormPropel
       'direccion'     => new sfValidatorString(array('max_length' => 255)),
       'colonia'       => new sfValidatorString(array('max_length' => 255, 'required' => false)),
       'cp'            => new sfValidatorString(array('max_length' => 5, 'required' => false)),
-      'ruta'          => new sfValidatorInteger(array('min' => -128, 'max' => 127)),
+      'ruta'          => new sfValidatorBoolean(),
       'ciudad'        => new sfValidatorString(array('max_length' => 255)),
       'telcasa'       => new sfValidatorString(array('max_length' => 10, 'required' => false)),
       'telmovil'      => new sfValidatorString(array('max_length' => 10, 'required' => false)),
@@ -60,8 +60,8 @@ abstract class BaseCasaForm extends BaseFormPropel
       'colchonetas'   => new sfValidatorInteger(array('min' => -2147483648, 'max' => 2147483647, 'required' => false)),
       'iglesia'       => new sfValidatorInteger(array('min' => -2147483648, 'max' => 2147483647, 'required' => false)),
       'coordenadas'   => new sfValidatorString(array('max_length' => 255, 'required' => false)),
-      'asignado'      => new sfValidatorInteger(array('min' => -128, 'max' => 127)),
-      'alternos'      => new sfValidatorInteger(array('min' => -128, 'max' => 127)),
+      'asignado'      => new sfValidatorBoolean(),
+      'alternos'      => new sfValidatorBoolean(),
       'observaciones' => new sfValidatorString(array('max_length' => 255, 'required' => false)),
     ));
 
