@@ -19,15 +19,56 @@ class casaActions extends autoCasaActions
 
   $casas = CasaPeer::doCount(new Criteria());
 
+  $a = new Criteria();
+  $a->clearSelectColumns();
+  $a->add(CasaPeer::MATRIMONIOS, 0, Criteria::GREATER_THAN);
+  $a->addSelectColumn('sum('.CasaPeer::MATRIMONIOS.')');
+  $matrimonios=CasaPeer::doSelectStmt($a);
+  $totalmatrimonios= $matrimonios->fetch(PDO::FETCH_NUM);
+
+  $b = new Criteria();
+  $b->clearSelectColumns();
+  $b->add(CasaPeer::PEQUES, 0, Criteria::GREATER_THAN);
+  $b->addSelectColumn('sum('.CasaPeer::PEQUES.')');
+  $peques=CasaPeer::doSelectStmt($b);
+  $totalpeques= $peques->fetch(PDO::FETCH_NUM);
+
   $c = new Criteria();
+  $c->clearSelectColumns();
   $c->add(CasaPeer::JOVENES, 0, Criteria::GREATER_THAN);
-  $c->addSelectColumn(CasaPeer::JOVENES);
+  $c->addSelectColumn('sum('.CasaPeer::JOVENES.')');
+  $jovenes=CasaPeer::doSelectStmt($c);
+  $totaljovenes= $jovenes->fetch(PDO::FETCH_NUM);
 
-  $criteria = new Criteria;
-  $criteria->addAscendingOrderByColumn(CasaPeer::JOVENES);
-  $jovenes = CasaPeer::doCount($criteria);
+  $d = new Criteria();
+  $d->clearSelectColumns();
+  $d->add(CasaPeer::JOVENCITAS, 0, Criteria::GREATER_THAN);
+  $d->addSelectColumn('sum('.CasaPeer::JOVENCITAS.')');
+  $jovencitas=CasaPeer::doSelectStmt($d);
+  $totaljovencitas= $jovencitas->fetch(PDO::FETCH_NUM);
 
-  $matrimonios=$iglesia=$niños=$jovenes=$señoritas=$colchonetas=1;
+  $e = new Criteria();
+  $e->clearSelectColumns();
+  $e->add(CasaPeer::IGLESIA, 0, Criteria::GREATER_THAN);
+  $e->addSelectColumn('sum('.CasaPeer::IGLESIA.')');
+  $iglesia=CasaPeer::doSelectStmt($e);
+  $totaliglesia= $iglesia->fetch(PDO::FETCH_NUM);
+
+  $f = new Criteria();
+  $f->clearSelectColumns();
+  $f->add(CasaPeer::TOTALPERSONAS, 0, Criteria::GREATER_THAN);
+  $f->addSelectColumn('sum('.CasaPeer::TOTALPERSONAS.')');
+  $totalpersonas=CasaPeer::doSelectStmt($f);
+  $totalpersonastotal= $totalpersonas->fetch(PDO::FETCH_NUM);
+
+  $f = new Criteria();
+  $f->clearSelectColumns();
+  $f->add(CasaPeer::COLCHONETAS, 0, Criteria::GREATER_THAN);
+  $f->addSelectColumn('sum('.CasaPeer::COLCHONETAS.')');
+  $colchonetas=CasaPeer::doSelectStmt($f);
+  $totalcolchonetas= $colchonetas->fetch(PDO::FETCH_NUM);
+
+
   $config = sfTCPDFPluginConfigHandler::loadConfig();
 
   // pdf object
@@ -36,7 +77,7 @@ class casaActions extends autoCasaActions
   // set document information
   $pdf->SetCreator(PDF_CREATOR);
   $pdf->SetAuthor('Abraham Rafael Rico Moreno');
-  $pdf->SetTitle('Iglesia Bautista Fundamental de Celaya');
+  $pdf->SetTitle('Iglesia Biblica Bautista de San Luis Potosi');
   $pdf->SetSubject('Bienvenidos');
   $pdf->SetKeywords('IBF, ibfcelaya, hospedaje, casa, ab');
 
@@ -77,11 +118,11 @@ class casaActions extends autoCasaActions
   $pdf->AddPage();
 
   // Set some content to print
-  $html = "Conferencia de la Espada y Fuegos de Evangelismo"."<br/>".
+   $html = "Conferencia de la Espada y Fuegos de Evangelismo"."<br/>".
   "<div aling:'center'>Reporte General de Hospedaje </div>"."Total de casas: ".$casas.
-  "<br/>"."Total de Grupos (Iglesia): "."N"."<br/>"."Total de Matrimonios: "."N"."<br/>".
-  "Total de niños: "."peques"."<br/>"."Total de Jovenes: "."N"."<br/>"."Total de Señoritas: "."N".
-  "<br/>"."Total de personas a hospedar: "."N"."<br/>"."Total de Colchonetas repartidas: "."N";
+  "<br/>"."Total de Grupos (Iglesia): ".$totaliglesia[0]."<br/>"."Total de Matrimonios: ".$totalmatrimonios[0]."<br/>".
+  "Total de niños: ".$totalpeques[0]."<br/>"."Total de Jovenes: ".$totaljovenes[0]."<br/>"."Total de Señoritas: ".$totaljovenes[0].
+  "<br/>"."Total de personas a hospedar: ".$totalpersonastotal[0]."<br/>"."Total de Colchonetas repartidas: ".$totalcolchonetas[0];
 
   // Print text using writeHTMLCell()
   $pdf->writeHTMLCell($w=0, $h=0, $x='', $y='', $html, $border=0, $ln=1, $fill=0, $reseth=true, 
